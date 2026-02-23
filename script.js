@@ -1,42 +1,76 @@
-async function loadAppIntoPopup(filename) {
-    const popup = document.getElementById('app-popup');
-  
-    if (!popup.classList.contains('hidden')) {
-      popup.classList.add('hidden');
-      return;
+const container = document.getElementById('scroll-container');
+
+// ─────────────────────────────────────────────────
+// 1. IntersectionObserver — animate elements in/out
+// ─────────────────────────────────────────────────
+const animEls = document.querySelectorAll(
+  '.anim-head, .anim-text, .anim-img, .anim-doodle'
+);
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    } else {
+      e.target.classList.remove('visible');
     }
-  
-    try {
-      const response = await fetch(filename);
-      const htmlText = await response.text();
-  
-      const temp = document.createElement('div');
-      temp.innerHTML = htmlText;
-  
-      const appDiv = temp.querySelector('.app');
-      popup.innerHTML = '';
-      if (appDiv) {
-        popup.appendChild(appDiv);
-      } else {
-        popup.innerHTML = '<p>Could not load app.</p>';
-      }
-  
-      popup.classList.remove('hidden');
-    } catch (err) {
-      console.error(err);
+  });
+}, { root: container, threshold: 0.12 });
+
+animEls.forEach(el => io.observe(el));
+
+
+// ─────────────────────────────────────────────────
+// 2. Color-wipe reveal for divider sections
+// ─────────────────────────────────────────────────
+const wipeSections = document.querySelectorAll('.color-wipe-section');
+
+const wipeIO = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('wiped');
+    } else {
+      e.target.classList.remove('wiped');
     }
-  }
-  
-  document.addEventListener('click', (e) => {
-    const popup = document.getElementById('app-popup');
-  
-    if (
-        popup.classList.contains('hidden') ||
-        popup.contains(e.target) ||
-        e.target.closest('#flower-button')
-    ) {
-      return;
+  });
+}, { root: container, threshold: 0.35 });
+
+wipeSections.forEach(s => wipeIO.observe(s));
+
+
+// ─────────────────────────────────────────────────
+// 3. Parallax — doodles move slightly slower
+// ─────────────────────────────────────────────────
+const parallaxEls = document.querySelectorAll('.pdoodle');
+const vh = window.innerHeight;
+
+function onScroll() {
+  const scrollTop = container.scrollTop;
+  parallaxEls.forEach(el => {
+    const section = el.closest('.section');
+    if (!section) return;
+    const sTop = section.offsetTop;
+    const rel  = scrollTop - sTop;
+    if (Math.abs(rel) < vh * 1.4) {
+      const speed = parseFloat(el.dataset.speed || '0.3');
+      el.style.transform = `translateY(${rel * speed * -0.35}px)`;
     }
-  
-    popup.classList.add('hidden');
-});  
+  });
+}
+
+container.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+
+// ─────────────────────────────────────────────────
+// 4. Smooth-scroll TOC links
+// ─────────────────────────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      container.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+    }
+  });
+});

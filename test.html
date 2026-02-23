@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700;900&family=Sanchez&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="scroll-container">
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 1 · COVER
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="cover">
+
+    <svg class="cv-spiral-l pdoodle anim-doodle d3" data-speed="0.28" viewBox="0 0 100 120" fill="none">
+      <path d="M50,60 C50,60 50,28 22,28 C-6,28 -6,60 22,66 C50,72 66,50 58,28 C50,6 22,10 14,28 C6,46 20,72 42,70"
+            stroke="#EDAFB8" stroke-width="6.5" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="cv-spiral-r pdoodle anim-doodle d3" data-speed="0.28" viewBox="0 0 100 120" fill="none">
+      <path d="M50,60 C50,60 50,28 78,28 C106,28 106,60 78,66 C50,72 34,50 42,28 C50,6 78,10 86,28 C94,46 80,72 58,70"
+            stroke="#EDAFB8" stroke-width="6.5" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="cv-star-1 pdoodle anim-doodle d5" data-speed="0.22" viewBox="0 0 100 100">
+      <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z"
+            fill="#EDAFB8" stroke="#4A5759" stroke-width="3.5"/>
+    </svg>
+
+    <svg class="cv-star-2 pdoodle anim-doodle d6" data-speed="0.18" viewBox="0 0 100 100">
+      <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z"
+            fill="#EDAFB8" stroke="#4A5759" stroke-width="3.5"/>
+    </svg>
+
+    <div class="cv-wrap">
+      <span class="cv-creative anim-head">2026</span>
+      <div>
+        <span class="cv-port ht-green anim-head d1">PORT</span>
+      </div>
+      <div>
+        <span class="cv-folio ht-green anim-head d2">FOLIO</span>
+      </div>
+      <span class="cv-by anim-text d4">by: <em>Sasha ❀ </em></span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 2 · TABLE OF CONTENTS
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="toc">
+
+    <svg class="toc-swirl-tr pdoodle anim-doodle d5" data-speed="0.30" viewBox="0 0 120 140" fill="none">
+      <path d="M30,10 C80,10 110,40 110,80 C110,120 75,130 55,115 C35,100 40,75 60,72 C80,69 92,85 82,95"
+            stroke="#EDAFB8" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="toc-swirl-bl pdoodle anim-doodle d6" data-speed="0.22" viewBox="0 0 120 140" fill="none">
+      <path d="M90,130 C40,130 10,100 10,60 C10,20 45,10 65,25 C85,40 80,65 60,68 C40,71 28,55 38,45"
+            stroke="#EDAFB8" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+
+    <div style="display:flex; flex-direction:column; align-items:center; width:100%">
+      <div class="toc-title-wrap">
+        <div class="anim-head">
+          <span class="toc-line1 ht-orange">TABLE OF</span>
+        </div>
+        <div class="anim-head d1">
+          <span class="toc-line2 ht-orange">CONTENTS</span>
+        </div>
+      </div>
+
+      <div class="toc-grid">
+        <a class="toc-link anim-text d2" href="#about">
+          <svg class="toc-star" viewBox="0 0 100 100">
+            <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z" fill="#B0C4B1" stroke="#4A5759" stroke-width="3.5"/>
+            <text x="50" y="60" text-anchor="middle" font-family="Caveat,cursive" font-size="24" fill="#4A5759" font-weight="bold">01</text>
+          </svg>
+          <span>About Me</span>
+        </a>
+        <a class="toc-link anim-text d2" href="#projects">
+          <svg class="toc-star" viewBox="0 0 100 100">
+            <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z" fill="#EDAFB8" stroke="#4A5759" stroke-width="3.5"/>
+            <text x="50" y="60" text-anchor="middle" font-family="Caveat,cursive" font-size="24" fill="#4A5759" font-weight="bold">04</text>
+          </svg>
+          <span>Project 1</span>
+        </a>
+
+        <a class="toc-link anim-text d3" href="#education">
+          <svg class="toc-star" viewBox="0 0 100 100">
+            <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z" fill="#EDAFB8" stroke="#4A5759" stroke-width="3.5"/>
+            <text x="50" y="60" text-anchor="middle" font-family="Caveat,cursive" font-size="24" fill="#4A5759" font-weight="bold">02</text>
+          </svg>
+          <span>Education</span>
+        </a>
+        <a class="toc-link anim-text d3" href="#projects">
+          <svg class="toc-star" viewBox="0 0 100 100">
+            <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z" fill="#B0C4B1" stroke="#4A5759" stroke-width="3.5"/>
+            <text x="50" y="60" text-anchor="middle" font-family="Caveat,cursive" font-size="24" fill="#4A5759" font-weight="bold">05</text>
+          </svg>
+          <span>Project 2</span>
+        </a>
+
+        <a class="toc-link anim-text d4" href="#skills">
+          <svg class="toc-star" viewBox="0 0 100 100">
+            <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z" fill="#B0C4B1" stroke="#4A5759" stroke-width="3.5"/>
+            <text x="50" y="60" text-anchor="middle" font-family="Caveat,cursive" font-size="24" fill="#4A5759" font-weight="bold">03</text>
+          </svg>
+          <span>Skills</span>
+        </a>
+        <a class="toc-link anim-text d4" href="#contact">
+          <svg class="toc-star" viewBox="0 0 100 100">
+            <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z" fill="#EDAFB8" stroke="#4A5759" stroke-width="3.5"/>
+            <text x="50" y="60" text-anchor="middle" font-family="Caveat,cursive" font-size="24" fill="#4A5759" font-weight="bold">06</text>
+          </svg>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 3 · INTRO DIVIDER
+  ═══════════════════════════════════════════════ -->
+  <section class="section color-wipe-section" id="intro-divider">
+
+    <svg class="intro-ast-l pdoodle anim-doodle d4" data-speed="0.32" viewBox="0 0 100 100">
+      <g stroke="#B0C4B1" stroke-width="11" stroke-linecap="round">
+        <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+        <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+      </g>
+    </svg>
+
+    <svg class="intro-ast-r pdoodle anim-doodle d5" data-speed="0.26" viewBox="0 0 100 100">
+      <g stroke="#B0C4B1" stroke-width="11" stroke-linecap="round">
+        <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+        <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+      </g>
+    </svg>
+
+    <svg class="intro-flower pdoodle anim-doodle d5" data-speed="0.38" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="12" fill="none" stroke="#EDAFB8" stroke-width="5"/>
+      <ellipse cx="50" cy="24" rx="10" ry="15" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+      <ellipse cx="50" cy="76" rx="10" ry="15" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+      <ellipse cx="24" cy="50" rx="15" ry="10" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+      <ellipse cx="76" cy="50" rx="15" ry="10" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+    </svg>
+
+    <svg class="intro-heart pdoodle anim-doodle d6" data-speed="0.30" viewBox="0 0 60 56">
+      <path d="M30,50 C30,50 6,34 6,20 C6,11 14,6 22,10 C25,12 28,15 30,18 C32,15 35,12 38,10 C46,6 54,11 54,20 C54,34 30,50 30,50Z"
+            fill="none" stroke="#EDAFB8" stroke-width="4"/>
+    </svg>
+
+    <div class="div-wrap">
+      <span class="div-above anim-text d2">About Me</span>
+      <span class="div-main ht-divider anim-head">INTRO</span>
+      <span class="div-sub-l anim-text d3">My Education</span>
+      <span class="div-sub-r anim-text d4">And Skills!</span>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 4 · ABOUT ME
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="about">
+
+    <div class="ab-left">
+      <div class="ab-blob anim-img d1"></div>
+
+      <svg class="ab-squiggle pdoodle anim-doodle d5" data-speed="0.28" viewBox="0 0 50 140" fill="none">
+        <path d="M25,8 C38,20 12,32 25,44 C38,56 12,68 25,80 C38,92 12,104 25,116 C38,128 12,138 25,140"
+              stroke="#B0C4B1" stroke-width="4.5" stroke-linecap="round"/>
+      </svg>
+
+      <svg class="ab-spiral pdoodle anim-doodle d6" data-speed="0.22" viewBox="0 0 80 80" fill="none">
+        <path d="M40,40 C40,40 40,18 20,18 C0,18 0,40 20,45 C40,50 52,34 46,18 C40,2 18,6 12,22 C6,38 20,58 38,55"
+              stroke="#EDAFB8" stroke-width="5" stroke-linecap="round"/>
+      </svg>
+
+      <img class="ab-photo anim-img d2" src="pictures/about.jpeg" alt="About Me">
+    </div>
+
+    <div class="ab-right">
+      <div>
+        <span class="ab-title-l1 ht-green anim-head">ABOUT</span>
+      </div>
+      <div class="ab-title-l2">
+        <span class="ab-title-me ht-green anim-head d1">ME</span>
+        <span class="ab-ast anim-doodle d3">*</span>
+        <span class="ab-ast anim-doodle d4" style="color:var(--cherry-blossom)">*</span>
+      </div>
+      <p class="ab-greeting anim-text d2">Hi, I'm <em>Sasha</em>!</p>
+      <p class="ab-bio anim-text d3">
+        I'm a CS student at Drexel University who builds full-stack apps, with interests in cybersecurity. 
+        I genuinely enjoy the puzzle of making things work well. My projects range from a mobile budgeting app 
+        built with Flutter to a security-focused CLI password manager — I like work that sits at the intersection of 
+        good design and solid engineering. <br> Off-screen, I rock climb, lift weights, travel wherever I can, and crochet. I also work at the movies!
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 5 · EDUCATION
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="education">
+
+    <svg class="edu-squiggle pdoodle anim-doodle d5" data-speed="0.30" viewBox="0 0 220 55" fill="none">
+      <path d="M8,28 C28,6 50,50 72,28 C94,6 116,50 138,28 C160,6 182,50 212,28"
+            stroke="#EDAFB8" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="edu-ast pdoodle anim-doodle d6" data-speed="0.38" viewBox="0 0 100 100">
+      <g stroke="#EDAFB8" stroke-width="12" stroke-linecap="round">
+        <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+        <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+      </g>
+    </svg>
+
+    <svg class="edu-spiral pdoodle anim-doodle d7" data-speed="0.20" viewBox="0 0 80 80" fill="none">
+      <path d="M40,40 C40,40 40,62 60,62 C80,62 80,40 60,35 C40,30 28,46 34,60 C40,74 58,72 64,58"
+            stroke="#B0C4B1" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+
+    <div class="edu-header">
+      <span class="edu-title ht-green anim-head">EDUCATION</span>
+    </div>
+
+    <div class="edu-body">
+      <div class="edu-txt anim-text d2">
+        <h3>High School</h3>
+        <p>Deer Park High School, Deer Park, NY.<br>
+        2020–2024<br><br>
+        Graduated with a 4.0 GPA as an AP student, 
+        competed on the varsity golf team, and 
+        stayed active in a range of extracurriculars..</p>
+      </div>
+
+      <div class="edu-center">
+        <div class="edu-blob anim-img d1"></div>
+        <img class="edu-photo anim-img d2" src="pictures/grad.jpeg" alt="Education">
+      </div>
+
+      <div class="edu-txt anim-text d3">
+        <h3>College</h3>
+        <p>Drexel University, Philadelphia, PA.<br>
+        Expected Graduation: 2029<br>
+        B.S. in Computer Science.<br><br>
+        Current sophomore, planning to complete concentrantions in Cybersecurity and 
+        Software Engineering. Involved in Drexel CHAARG and Women in Computing Society</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 6 · SKILLS
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="skills">
+
+    <div class="sk-left">
+      <p class="sk-subtitle anim-head">These are my skills</p>
+
+      <div class="sk-block anim-text d2">
+        Python &nbsp;·&nbsp; React &nbsp;·&nbsp; SQL<br>
+        JavaScript &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; Tailwind CSS<br>
+        Flutter/Dart &nbsp;·&nbsp; CI/CD
+      </div>
+
+      <div class="sk-block right anim-text d3">
+        Supabase &nbsp;·&nbsp; RESTful APIs<br>
+        Git/GitHub &nbsp;·&nbsp; Figma
+      </div>
+
+      <!-- Big SKILLS label bottom-left -->
+      <span class="sk-title-big ht-green anim-head d4">SKILLS</span>
+    </div>
+
+    <div class="sk-right">
+      <div class="sk-blob anim-img d1"></div>
+
+      <svg class="sk-flower pdoodle anim-doodle d5" data-speed="0.30" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="13" fill="none" stroke="#B0C4B1" stroke-width="5"/>
+        <ellipse cx="50" cy="23" rx="11" ry="16" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+        <ellipse cx="50" cy="77" rx="11" ry="16" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+        <ellipse cx="23" cy="50" rx="16" ry="11" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+        <ellipse cx="77" cy="50" rx="16" ry="11" fill="none" stroke="#B0C4B1" stroke-width="4"/>
+      </svg>
+
+      <svg class="sk-ast pdoodle anim-doodle d6" data-speed="0.35" viewBox="0 0 100 100">
+        <g stroke="#EDAFB8" stroke-width="11" stroke-linecap="round">
+          <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+          <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+        </g>
+      </svg>
+
+      <img class="sk-photo anim-img d2" src="pictures/idk.jpeg" alt="Skills">
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 7 · WORKS DIVIDER
+  ═══════════════════════════════════════════════ -->
+  <section class="section color-wipe-section" id="works-divider">
+
+    <svg class="works-ast-o pdoodle anim-doodle d4" data-speed="0.30" viewBox="0 0 100 100">
+      <g stroke="#B0C4B1" stroke-width="12" stroke-linecap="round">
+        <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+        <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+      </g>
+    </svg>
+
+    <svg class="works-ast-g pdoodle anim-doodle d5" data-speed="0.38" viewBox="0 0 100 100">
+      <g stroke="#B0C4B1" stroke-width="12" stroke-linecap="round">
+        <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+        <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+      </g>
+    </svg>
+
+    <svg class="works-squig pdoodle anim-doodle d6" data-speed="0.22" viewBox="0 0 160 48" fill="none">
+      <path d="M8,24 C26,4 46,44 66,24 C86,4 106,44 126,24 C146,4 158,30 156,24"
+            stroke="#B0C4B1" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+
+    <div class="div-wrap">
+      <span class="div-main ht-divider anim-head">WORKS</span>
+      <p class="works-sub anim-text d4" style="font-family:'Caveat',cursive; font-size:clamp(14px,2vw,28px); text-align:center; color:var(--iron-grey)">
+        Projects I made
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 8 · PROJECTS
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="projects">
+
+    <svg class="proj-spiral-l pdoodle anim-doodle d5" data-speed="0.30" viewBox="0 0 80 160" fill="none">
+      <path d="M40,80 C40,80 40,48 16,48 C-8,48 -8,80 16,86 C40,92 54,72 48,50 C42,28 18,32 12,50 C6,68 18,90 36,88"
+            stroke="#B0C4B1" stroke-width="5.5" stroke-linecap="round"/>
+      <path d="M40,80 C40,80 40,112 64,112 C88,112 88,80 64,74 C40,68 26,88 32,110 C38,132 62,128 68,110 C74,92 62,70 44,72"
+            stroke="#B0C4B1" stroke-width="5.5" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="proj-spiral-r pdoodle anim-doodle d6" data-speed="0.24" viewBox="0 0 80 80" fill="none">
+      <path d="M40,40 C40,40 40,20 56,20 C72,20 72,40 56,44 C40,48 30,35 36,22 C42,9 58,12 64,25"
+            stroke="#B0C4B1" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+
+    <svg class="proj-squig-br pdoodle anim-doodle d7" data-speed="0.34" viewBox="0 0 200 72" fill="none">
+      <path d="M8,36 C28,8 50,64 72,36 C94,8 116,64 138,36 C160,8 182,55 196,36"
+            stroke="#EDAFB8" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+
+    <!-- PROJECT 1 — image left, text right -->
+    <div class="proj-row">
+      <div class="proj-img-wrap">
+        <div class="proj-blob anim-img d1"></div>
+        <!-- PHOTO: replace with your Project 1 image -->
+        <div class="proj-photo photo-ph anim-img d2">
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-lbl">[ Project 1 Image ]</span>
+        </div>
+      </div>
+      <div class="proj-txt">
+        <h2 class="anim-head d2">Budget Dragons</h2>
+        <p class="anim-text d3">
+          A mobile budgeting app built with Flutter and Dart, designed to help college students take control of their personal finances. 
+          It was developed as part of a three-course freshman sequence, collaborating in an Agile team of four to move from concept 
+          to working product over several months. The process taught me as much about teamwork and iterative design as it did about mobile development.
+        </p>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 — text left, image right -->
+    <div class="proj-row flip">
+      <div class="proj-img-wrap">
+        <div class="proj-blob anim-img d4" style="border-radius:46% 54% 60% 40%/54% 46% 58% 42%;"></div>
+        <!-- PHOTO: replace with your Project 2 image -->
+        <div class="proj-photo photo-ph anim-img d5">
+          <span class="ph-icon">🖼️</span>
+          <span class="ph-lbl">[ Project 2 Image ]</span>
+        </div>
+      </div>
+      <div class="proj-txt" style="text-align:right">
+        <h2 class="anim-head d2">NibbleLog</h2>
+        <p class="anim-text d4">
+          A full-stack calorie tracking web app built with React, Vite, and Supabase. It features email authentication, real-time meal logging, 
+          and a 7-day nutrition history dashboard so users can spot patterns in their eating habits over time. I integrated the Open Food Facts API 
+          with debounced search and live barcode scanning to make food lookup seamless across millions of products. On the design side, I built a fully 
+          responsive UI using Tailwind CSS and shadcn/ui with a custom design system
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 9 · CONTACT
+  ═══════════════════════════════════════════════ -->
+  <section class="section" id="contact">
+
+    <div class="ct-left">
+      <div class="ct-blob anim-img d1"></div>
+
+      <svg class="ct-flower pdoodle anim-doodle d5" data-speed="0.28" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="12" fill="none" stroke="white" stroke-width="5.5"/>
+        <ellipse cx="50" cy="23" rx="11" ry="16" fill="none" stroke="white" stroke-width="4.5"/>
+        <ellipse cx="50" cy="77" rx="11" ry="16" fill="none" stroke="white" stroke-width="4.5"/>
+        <ellipse cx="23" cy="50" rx="16" ry="11" fill="none" stroke="white" stroke-width="4.5"/>
+        <ellipse cx="77" cy="50" rx="16" ry="11" fill="none" stroke="white" stroke-width="4.5"/>
+      </svg>
+
+      <svg class="ct-ast pdoodle anim-doodle d6" data-speed="0.33" viewBox="0 0 100 100">
+        <g stroke="#EDAFB8" stroke-width="14" stroke-linecap="round">
+          <line x1="50" y1="6" x2="50" y2="94"/><line x1="6" y1="50" x2="94" y2="50"/>
+          <line x1="18" y1="18" x2="82" y2="82"/><line x1="82" y1="18" x2="18" y2="82"/>
+        </g>
+      </svg>
+
+      <svg class="ct-star pdoodle anim-doodle d7" data-speed="0.20" viewBox="0 0 100 100">
+        <path d="M50,8 L61,35 L91,35 L68,57 L77,84 L50,66 L23,84 L32,57 L9,35 L39,35 Z"
+              fill="#EDAFB8" stroke="#4A5759" stroke-width="3.5"/>
+      </svg>
+
+      <img class="ct-photo anim-img d2" src="pictures/contact.jpeg" alt="Contact">
+    </div>
+
+    <div class="ct-right">
+      <div>
+        <span class="ct-title-main ht-white anim-head">CONTACT</span>
+      </div>
+      <span class="ct-me anim-text d2">Me!</span>
+
+      <div class="ct-item anim-text d3">
+        <h4><a href="https://github.com/sasharico" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/sasharico" target="_blank">LinkedIn</a></h4>
+      </div>
+      <div class="ct-item anim-text d4">
+        <h4>Email Address</h4>
+        <p><a href="mailto:shr38@drexel.edu">shr38@drexel.edu</a></p>
+      </div>
+      <div class="ct-item anim-text d5">
+        <h4>Phone Number</h4>
+        <p>(917)-623-3762</p>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /#scroll-container -->
+
+<script src="script.js"></script>
+</body>
+</html>
