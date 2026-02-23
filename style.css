@@ -477,7 +477,7 @@ html, body {
 }
 .proj-row.flip .proj-blob { left: auto; right: -4%; }
 
-.proj-photo { width: 28vw; height: 23vh; position: relative; z-index: 1; }
+.proj-photo { width: 23vw; height: auto; position: relative; z-index: 1; }
 
 .proj-txt { flex: 1; }
 .proj-txt h2 {
